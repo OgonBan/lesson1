@@ -1,0 +1,11 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .box {
+    width: 50%;
+    height: 200px;
+    background-color: blue;
+    margin: 20px auto;
+  }
