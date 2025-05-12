@@ -1,0 +1,21 @@
+img {
+    display: block;
+    margin: 10px;
+}
+p {
+    display:inline;
+}
+.container {
+    display:block;
+    border: 2px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .box {
+    width: 50%;
+    height: 200px;
+    background-color: blue;
+    margin: 20px auto;
+  }
