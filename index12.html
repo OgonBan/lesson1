@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Позиционирование элементов</title>
+  <style>
+    .box1 {
+      border: 1px solid black;
+      margin: 10px;
+      padding: 10px;
+      position: static;
+    }
+
+    
+    .box2 {
+      border: 1px solid green;
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+      top: 10px;
+      left: 20px;
+    }
+
+    .container {
+      border: 1px solid blue;
+      margin: 10px;
+      padding: 20px;
+      position: relative;
+    }
+
+    .box3 {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: lightblue;
+      padding: 5px;
+    }
+.box4 {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: yellow;
+      padding: 10px;
+      border: 1px solid orange;
+    }
+      .sticky-title {
+      position: sticky;
+      top: 0;
+      background-color: lightgray;
+      padding: 10px;
+      border: 1px solid gray;
+    }
+
+    .text {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Stэtic </h2>
+  <div class="box1">Это обычный блок, это боковой.</div>
+  <div class="box1">Блоки идут друг за другом, затем джеб-оттяжка-джеб-джеб-боковой.</div>
+
+  <h2>2. Relэtive</h2>
+  <div class="box2">Этот блок сдвинут вниз и вправо ^> :).</div>
+
+  <h2>3. Я Absolute</h2>
+  <div class="container">
+    Это контейнер 
+    <div class="box3">борьба.</div>
+  </div>
+
+  <h2>4. Fixed</h2>
+  <p>фиксированная штука.</p>
+  <div class="box4">Fixed-блок фингерстайл</div>
+
+  <h2>5. Sticky</h2>
+  <h3 class="sticky-title">Заголовок 1</h3>
+  <p class="text">Много текста blablablablebleblublublu Много текста... Много текста...</p>
+  <h3 class="sticky-title">Заголовок 2</h3>
+  <p class="text">Много текста, холодно... мне холодно...</p>
+
+</body>
+</html>
