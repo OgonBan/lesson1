@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Headers with Custom Logos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+
+    .light {
+      background: white;
+      color: black;
+    }
+
+    .dark {
+      background: #0f172a;
+      color: white;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .logo-text {
+      line-height: 1.2;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .light nav a {
+      color: black;
+    }
+
+    .dark nav a {
+      color: white;
+    }
+
+    .search-input {
+      background-color: #e2e8f0;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-left: 20px;
+    }
+
+    .search-box {
+      background: #1e293b;
+      border-radius: 5px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input {
+      background: transparent;
+      border: none;
+      color: white;
+      outline: none;
+    }
+
+    .search-box input::placeholder {
+      color: #94a3b8;
+    }
+
+    .blue-outline-button {
+      border: 2px solid #3b82f6;
+      background: none;
+      color: #3b82f6;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .small-button {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #eee;
+      cursor: pointer;
+    }
+
+    .grow-search {
+      flex-grow: 1;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .center-nav {
+      justify-content: center;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="header light">
+    <div class="logo">
+      <img src="logo2.png" alt="Logo" width="153" height="25" style="margin-right: 10px;">
+      <input class="search-input" type="text" placeholder="Search" />
+    </div>
+    <nav>
+      <a href="#">Products</a>
+      <a href="#">Services</a>
+      <a href="#">Expertise</a>
+      <a href="#">About</a>
+    </nav>
+    <button>Login / Signup</button>
+  </div>
+
+
+  <div class="header light">
+    <div class="logo">
+      <img src="logo3.png" alt="Logo" width="146" height="53" style="margin-right: 10px;">
+      
+    </div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Market</a>
+      <a href="#">Services</a>
+      <a href="#">Blog</a>
+    </nav>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <button class="small-button">🔍</button>
+      <button class="blue-outline-button">Sign In</button>
+    </div>
+  </div>
+
+  
+  <div class="header light" style="justify-content: space-between;">
+    <div class="logo">
+      <img src="logo1.png" alt="Logo" width="30" height="30" style="margin-right: 10px;">
+      <div class="logo-text">THIS IS<br>MY LOGO</div>
+    </div>
+    <nav class="center-nav">
+      <a href="#">About</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Gallery</a>
+      <a href="#">Team</a>
+    </nav>
+    <button class="small-button">🔍</button>
+  </div>
+
+
+  <div class="header dark">
+    <div class="logo">
+      <img src="logo1.png" alt="Logo" width="30" height="30" style="margin-right: 10px;">
+      <div class="logo-text">THIS IS<br>MY LOGO</div>
+    </div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Gallery</a>
+      <a href="#">Team</a>
+    </nav>
+  </div>
+
+  
+  <div class="header dark">
+    <div class="logo" style="gap: 20px; flex: 1;">
+      <img src="logo1.png" alt="Logo" width="30" height="30" style="margin-right: 10px;">
+      <div class="logo-text">THIS IS<br>MY LOGO</div>
+      <div class="search-box grow-search">
+        <input type="text" placeholder="Search..." />
+      </div>
+    </div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Gallery</a>
+      <a href="#">Team</a>
+    </nav>
+  </div>
+
+</body>
+</html>
