@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карточка и эпизод</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      background: #fff;
+      color: #000;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 10px;
+      width: 380px;
+      height: 400px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .product-card h2 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      color: #555;
+      min-height: 40px;
+    }
+
+    .product-card span {
+      display: block;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .product-card button {
+      background: #ffd700;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product-card button:hover {
+      background: #ffc107;
+    }
+
+    .episode-box {
+      width: 1000px;
+      height: 480px;
+      background-color: #222;
+      border-radius: 20px;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .episode-box img {
+      width: 389px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 40px;
+    }
+
+    .episode-content {
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+    }
+
+    .episode-number {
+      color: #00bfff;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .episode-title {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .episode-description {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .episode-button {
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      align-self: start;
+    }
+
+    .episode-button:hover {
+      background-color: #0099cc;
+    }
+
+    .about-box {
+      width: 330px;
+      height: 400px;
+      background-color: #0a1a3a;
+      border-radius: 16px;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      margin: 40px auto 0;
+    }
+
+    .about-dots {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: flex;
+      gap: 5px;
+    }
+
+    .about-dots span {
+      width: 6px;
+      height: 6px;
+      background: #5bc0ff;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .about-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #999;
+      margin-top: 40px;
+    }
+
+    .about-text {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .about-title {
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .about-subtitle {
+      color: #aaa;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .about-description {
+      color: #aaa;
+      font-size: 13px;
+      margin-top: 15px;
+      line-height: 1.5;
+    }
+
+    .art-card {
+      width: 280px;
+      background-color: #e0eadf;
+      border-radius: 8px;
+      padding: 20px;
+      font-family: sans-serif;
+      color: #333;
+      margin: 60px auto 0;
+      box-sizing: border-box;
+    }
+
+    .art-card img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .art-card .artist {
+      font-size: 14px;
+      color: #888;
+      margin-top: 12px;
+    }
+
+    .art-card .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 8px 0 4px;
+    }
+
+    .art-card .medium {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .art-card .price {
+      color: #3d8b6d;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 12px 0;
+    }
+
+    .art-card button {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #3d8b6d;
+      background-color: transparent;
+      color: #3d8b6d;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .art-card button:hover {
+      background-color: #d3e5dc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="product-card">
+      <img src="keks8.jpg" alt="Облачная сказка">
+      <h2>Облачная сказка</h2>
+      <p>Светлая основа, нежный крем</p>
+      <span>150 ₽/шт.</span>
+      <button>Заказать</button>
+    </div>
+
+    <div class="episode-box">
+      <img src="water1.png" alt="Episode image">
+      <div class="episode-content">
+        <div class="episode-number">Episode 3</div>
+        <div class="episode-title">Should you get outboard gear?</div>
+        <div class="episode-description">
+          Is hardware really worth it when it comes to podcasting? The answer is... it depends. <br>
+          Here’s our reasons on why you might want to consider picking something up.
+        </div>
+        <button class="episode-button">View episode details</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-box">
+    <div class="about-dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="about-avatar"></div>
+    <div class="about-text">
+      <div class="about-title">About Me</div>
+      <div class="about-subtitle">Jason Maning<br>Product Designer</div>
+      <p class="about-description">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+        et justo duo dolores et ea rebum.
+      </p>
+    </div>
+  </div>
+
+  <div class="art-card">
+    <img src="Screenshot_3.png" alt="Дама с собачкой">
+    <div class="artist">Анри Селин</div>
+    <div class="title">Дама с собачкой</div>
+    <div class="medium">Акрил, бумага (50x80)</div>
+    <div class="price">16 500 руб</div>
+    <button>В корзину</button>
+  </div>
+
+</body>
+</html>
