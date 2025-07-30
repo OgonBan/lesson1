@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Карточки картин</title>
+  <style>
+    body {
+      background: #f4f4f4;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      width: 350px;
+      height: 730px;
+      background: #d4f5d0; 
+      border-radius: 8px;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .card img {
+      width: 310px;
+      height: 422px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .author {
+      width: 133px;
+      height: 21px;
+      color: #999;
+      font-size: 14px;
+      text-align: left;
+      align-self: flex-start;
+      margin-left: 20px;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      width: 310px;
+      height: 35px;
+      font-size: 18px;
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .material {
+      width: 310px;
+      height: 21px;
+      font-size: 14px;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      width: 122px;
+      height: 28px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #34a853; 
+      margin-bottom: 10px;
+    }
+
+    .add-to-cart {
+      padding: 10px 20px;
+      border: 2px solid #34a853;
+      background-color: #e4fbe4;
+      color: #34a853;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .add-to-cart:hover {
+      background-color: #c9f4c9;
+    }
+  </style>
+</head>
+<body>
+  <div class="cards-container">
+   
+    <div class="card">
+      <img src="1.png" alt="Картина 1" />
+      <div class="author">И. Репин</div>
+      <div class="title">Бурлаки на Волге</div>
+      <div class="material">Холст, масло (50×80)</div>
+      <div class="price">14 500 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+
+    
+    <div class="card">
+      <img src="2.png" alt="Картина 2" />
+      <div class="author">И. Ушкемпиров</div>
+      <div class="title">Девятый вал</div>
+      <div class="material">Холст, масло (50×80)</div>
+      <div class="price">14 500 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+
+    
+    <div class="card">
+      <img src="3.png" alt="Картина 3" />
+      <div class="author">К. Сапиев</div>
+      <div class="title">ааа</div>
+      <div class="material">Холст, масло (50×80)</div>
+      <div class="price">14 500 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+
+    
+    <div class="card">
+      <img src="4.png" alt="Картина 4" />
+      <div class="author">В. Карелин</div>
+      <div class="title">Девочка с персиками</div>
+      <div class="material">Холст, масло (50×80)</div>
+      <div class="price">14 500 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+
+    
+    <div class="card">
+      <img src="5.png" alt="Картина 5" />
+      <div class="author">А. МБаппе</div>
+      <div class="title">Явление Христа</div>
+      <div class="material">Холст, масло (50×80)</div>
+      <div class="price">14 500 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+
+    
+    <div class="card">
+      <img src="62.png" alt="Картина 6" />
+      <div class="author">М. Б</div>
+      <div class="title">Демон сидящий</div>
+      <div class="material">Холст, масло (50×80)</div>
+      <div class="price">14 500 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+  </div>
+</body>
+</html>
