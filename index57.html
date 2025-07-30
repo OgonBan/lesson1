@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Ink. House — Реплики картин</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+  
+    .top-bar {
+      background: #e0f2e9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 100px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4caf50;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    
+    .main-header {
+      display: flex;
+      padding: 60px 100px;
+      height: 620px;
+      background: #f9f9f9;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .main-header img {
+      width: 540px;
+      height: 621px;
+      object-fit: cover;
+    }
+
+    .main-text h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .main-text h1 span {
+      color: #4caf50;
+    }
+
+    .main-text p {
+      color: #666;
+      margin-top: 20px;
+    }
+
+    .main-text button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: transparent;
+      border: 2px solid #4caf50;
+      color: #4caf50;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    
+    .countries {
+      padding: 40px 100px 20px;
+    }
+
+    .countries h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .country-links a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #4caf50;
+      font-weight: bold;
+    }
+
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 0 100px 100px;
+    }
+
+    .card {
+      width: 350px;
+      height: 730px;
+      border: 1px solid #00ffbf;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card img {
+      width: 310px;
+      height: 422px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0 5px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 4px 0;
+      color: #000000;
+      font-size: 14px;
+    }
+
+    .price {
+      color: #4caf50;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .card button {
+      margin-top: auto;
+      padding: 10px 20px;
+      background: transparent;
+      border: 1px solid #bbff00;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    
+    @media (max-width: 1200px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar,
+      .main-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="logo">Ink. House</div>
+    <nav>
+      <a href="#">Репродукции</a>
+      <a href="#">Новинки</a>
+      <a href="#">О нас</a>
+      <a href="#">🛒</a>
+    </nav>
+  </div>
+
+  
+  <section class="main-header">
+    <img src="bird.png" alt="Репродукция">
+    <div class="main-text">
+      <h1>Реплики картин от <span>Ink. House</span></h1>
+      <p>Высокое качество отрисовки</p>
+      <button>Продукция</button>
+    </div>
+  </section>
+
+  
+  <section class="countries">
+    <h2>Репродукции</h2>
+    <div class="country-links">
+      <a href="#">Франция</a>
+      <a href="#">Германия</a>
+      <a href="#">Англия</a>
+    </div>
+  </section>
+
+ 
+  <section class="cards">
+    <div class="card">
+      <img src="1.png" alt="Картина 1">
+      <h3>А. Иванов</h3>
+      <p>Охота Амура</p>
+      <p>Холст, масло. 50×70 см</p>
+      <div class="price">14 500 руб</div>
+      <button>В корзину</button>
+    </div>
+    <div class="card">
+      <img src="2.png" alt="Картина 2">
+      <h3>Е. Кустодиев</h3>
+      <p>Дама с собачкой</p>
+      <p>Бумага, акварель. 40×60 см</p>
+      <div class="price">16 500 руб</div>
+      <button>В корзину</button>
+    </div>
+    <div class="card">
+      <img src="3.png" alt="Картина 3">
+      <h3>И. Репин</h3>
+      <p>Процедура</p>
+      <p>Холст, масло. 60×80 см</p>
+      <div class="price">20 000 руб</div>
+      <button>В корзину</button>
+    </div>
+    <div class="card">
+      <img src="4.png" alt="Картина 4">
+      <h3>Ф. Руссо</h3>
+      <p>Пейзаж</p>
+      <p>Холст, масло. 60×80 см</p>
+      <div class="price">12 900 руб</div>
+      <button>В корзину</button>
+    </div>
+    <div class="card">
+      <img src="5.png" alt="Картина 5">
+      <h3>К. Моне</h3>
+      <p>Сад в Живерни</p>
+      <p>Холст, масло. 50×70 см</p>
+      <div class="price">18 000 руб</div>
+      <button>В корзину</button>
+    </div>
+    <div class="card">
+      <img src="62.png" alt="Картина 6">
+      <h3>Ж. Милле</h3>
+      <p>Сборщицы колосьев</p>
+      <p>Бумага, пастель. 30×40 см</p>
+      <div class="price">11 300 руб</div>
+      <button>В корзину</button>
+    </div>
+  </section>
+
+</body>
+</html>
