@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Карточки картин</title>
+  <style>
+    body {
+      background: #f4f4f4;
+      width: 310px;
+      height: 35px;
+      font-family: Raleway;
+      font-weight: 500;
+      font-size: 35px;
+      margin: 0;
+      padding: 20px;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 1140px;
+      margin: 0;
+      justify-content: center;
+    }
+    .card {
+      width: 350px;
+      height: 670px;
+      background: #E1EDE6;
+      border-radius: 8px;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .card img {
+      width: 310px;
+      height: 422px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .author {
+      width: 133px;
+      height: 21px;
+      color: #999;
+      font-size: 14px;
+      text-align: left;
+      align-self: flex-start;
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+    .title {
+      width: 310px;
+      height: 35px;
+      font-size: 18px;
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .material {
+      width: 310px;
+      height: 21px;
+      font-size: 14px;
+      color: #000;
+      margin-bottom: 20px;
+    }
+    .price {
+      width: 122px;
+      height: 28px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #047e36d7;
+      margin-bottom: 10px;
+      
+      margin-left: -180px;
+      text-align: left;
+      
+    
+    }
+    .add-to-cart {
+      padding: 10px 20px;
+      width: 310px;;
+      border: 2px solid  #598d66e0;
+      background-color: transparent;
+      color: #598D66;
+      cursor: pointer;
+      border-radius: 0;
+      font-size: 16px;
+      align-self: flex-start;
+      margin-left: 10px;
+    }
+    .add-to-cart:hover {
+      background-color: hsl(146, 51%, 65%)9;
+    }
+  </style>
+</head>
+<body>
+  <div class="cards-container">
+    <div class="card">
+      <img src="1.png" alt="Картина 1" />
+      <div class="author">Марсель Руссо</div>
+      <div class="title" style="font-size: 30px;">Охота Амура</div>
+      <div class="material">Холст, масло (50×80)</div>
+      <div class="price">14 500 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+    <div class="card">
+      <img src="2.png" alt="Картина 2" />
+      <div class="author">Анри Селин</div>
+      <div class="title" style="font-size: 30px;">Дама с собачкой</div>
+      <div class="material">Акрил, бумага  (50×80)</div>
+      <div class="price">16 500 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+    <div class="card">
+      <img src="3.png" alt="Картина 3" />
+      <div class="author">Франсуа Дюпон</div>
+      <div class="title" style="font-size: 30px;"> Процедура</div>
+      <div class="material">Цветная литография (50×80)</div>
+      <div class="price">20 000 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+    <div class="card">
+      <img src="4.png" alt="Картина 4" />
+      <div class="author">Луи Детош</div>
+      <div class="title"style="font-size: 30px;">Роза</div>
+      <div class="material">Бумага, акрил (50×80)</div>
+      <div class="price">12 000 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+    <div class="card">
+      <img src="5.png" alt="Картина 5" />
+      <div class="author">Франсуа Дюпон</div>
+      <div class="title"style="font-size: 30px;">Птичья трапеза</div>
+      <div class="material">Цветная литография (50×80)</div>
+      <div class="price">22 500 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+    <div class="card">
+      <img src="62.png" alt="Картина 6" />
+      <div class="author">Пьер Моранж</div>
+      <div class="title"style="font-size: 30px;">Пейзаж с рыбой</div>
+      <div class="material">Цветная литография (50×80)</div>
+      <div class="price">20 500 ₽</div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+  </div>
+</body>
+</html>
