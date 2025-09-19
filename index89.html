@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            width: ;
+            height: ;
+            background-color: aquamarine;
+            margin: 10px;
+            display: inline-block; color: #013b20;
+            color: antiquewhite;
+            text-align: center;
+        }
+
+        .rotate {
+            transform: rotate(45deg);
+        }
+        .scale {
+            transform:scale(1,27);
+        }
+        .translate {
+            transform: translate(50px, 30px);
+        }
+        .skew {
+            transform: skew(20deg);
+        }
+        
+        .transition-box {
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+      .transition-box:hover {
+        transform: rotate(180deg) scale(1.2);
+      }
+
+      @keyframes move {
+        0% {transform: translateX(0);}
+        50%{transform: translateX(200px);}
+        100%{transform: translateX(0);}
+      }
+      @keyframes pulse {
+        0% {transform: translateX(0);}
+        50%{transform: translateX(200px);}
+        100%{transform: translateX(0);}
+      }
+      .move-animation {
+        animation: move 2s infinite;
+      }
+      .pulse-animation {
+        animation: pulse 1.5s infinite;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1> трансформации </h1>
+    <h2>Transform</h2>
+    <div class="box rotate">Rotate</div>
+    <div class="box scale">Scale</div>
+    <div class="box translate">Translate</div>
+    <div class="box skew">Skew</div>
+    <h2> transition</h2>
+    <div class="box transition-box">navedite cursor</div>
+    <h2>Animations</h2>
+    <div class="box move-animation">Movw</div>
+    <div class="box spin-animation">spin</div>
+    <div class="box pulse-animation">pulse</div>
+</body>
+</html>
