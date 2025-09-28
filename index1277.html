@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Псевдоэлементы</title>
+    <style>
+        p::before {
+            content: "Мберебере";
+            color:aquamarine
+        }
+        h1::after, h2::after {
+            content: "*";
+            color:blue
+        }
+        .box {
+            padding: 20px;
+            margin: 20px;
+            border: 1px;
+        }
+        .box::before {
+            content: "brbr";
+            display: block;
+            color:blueviolet;
+        }
+        .box::after {
+            content: "brobro";
+            display: block;
+            color:rgb(93, 21, 160);
+        }
+    </style>
+</head>
+<body>
+    <h1>Заголовок 1</h1>
+    <h2>Заголовок 1</h2>
+
+    <p> Абзац 1</p>
+    <p> АБзац 2</p>
+     
+    <div class="box">
+        Сод
+    </div>
+    
+    
+</body>
+</html>
