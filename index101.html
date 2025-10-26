@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+</head>
+<body>
+    <script>
+        let age = 127
+        const city = "Almaty" //можно изменить возраст, но не название города, т.к. это константа
+        console.log("1")
+        console.log("age:", age)
+        console.log("city:", city)
+
+        console.log("Задание 2")
+        console.log("var — старый способ объявления переменных, вместо него используют let и const")
+
+        let num = 127
+        let str = "PRIVET"
+        let bool = true
+        let empty = null
+        let undef = undefined
+        let notNum = NaN
+
+        console.log(num, typeof num)
+        console.log(str, typeof str)
+        console.log(bool, typeof bool)
+        console.log(empty, typeof empty)
+        console.log(undef, typeof undef)
+        console.log(notNum, typeof notNum)
+
+        console.log("Задание 4")
+        let strToNum = Number("123")
+        let numToStr = String(456)
+        console.log(strToNum, typeof strToNum)
+        console.log(numToStr, typeof numToStr)
+        console.log(String(undefined), Number(undefined))
+        console.log(String(null), Number(null))
+
+        console.log("Задание 5")
+        let v = 10
+        console.log(v, typeof v)
+        v = "десять"
+        console.log(v, typeof v)
+
+        console.log("Задание 6")
+        let user = prompt("Введите имя")
+        let ageUser = prompt("Введите возраст")
+        console.log("Имя:", user)
+        console.log("Возраст:", ageUser)
+    </script>
+</body>
+</html>
