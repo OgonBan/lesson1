@@ -1,30 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>java</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML BEM</title>
+  <style>
+    body {
+      background: #f4f4f4;
+      width: 310px;
+      height: 35px;
+      font-family: Raleway;
+      font-weight: 500;
+      font-size: 35px;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 1140px;
+      margin: 0;
+      justify-content: center;
+    }
+
+    .cards-card {
+      width: 350px;
+      height: 670px;
+      background: #E1EDE6;
+      border-radius: 8px;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .cards-card__image {
+      width: 310px;
+      height: 422px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .cards-card__author { 
+      width: 133px;
+      height: 21px;
+      color: #999;
+      font-size: 14px;
+      text-align: left;
+      align-self: flex-start;
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+
+    .cards-card__title { 
+      width: 310px;
+      height: 35px;
+      font-size: 18px;
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .cards-card__material { 
+      width: 310px;
+      height: 21px;
+      font-size: 14px;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .cards-card__price { 
+      width: 122px;
+      height: 28px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #047e36d7;
+      margin-bottom: 10px;
+      margin-left: -180px;
+      text-align: left;
+    }
+
+    .cards-card__button { 
+      padding: 10px 20px;
+      width: 310px;
+      border: 2px solid #598d66e0;
+      background-color: transparent;
+      color: #598D66;
+      cursor: pointer;
+      border-radius: 0;
+      font-size: 16px;
+      align-self: flex-start;
+      margin-left: 10px;
+    }
+
+    .cards-card__button:hover { 
+      background-color: #98c9a8;
+    }
+  </style>
 </head>
 <body>
-    <script>
-        let age = 127
-        const city = "Almaty" //можно изменить возраст, но не название города, т.к. это константа
-        console.log("1")
-        console.log("age:", age)
-        console.log("city:", city)
+  <div class="cards">
+    <div class="cards-card">
+      <img src="1.png" alt="Картина 1" class="cards-card__image"/>
+      <div class="cards-card__author">Марсель Руссо</div>
+      <div class="cards-card__title" style="font-size: 30px;">Охота Амура</div>
+      <div class="cards-card__material">Холст, масло (50×80)</div>
+      <div class="cards-card__price">14 500 ₽</div>
+      <button class="cards-card__button">В корзину</button>
+    </div>
 
-        console.log("Задание 2")
-        console.log("Функция var является устаревшей, т.к. вместо этой функции можно использовать et и const")
+    <div class="cards-card">
+      <img src="2.png" alt="Картина 2" class="cards-card__image"/>
+      <div class="cards-card__author">Анри Селин</div>
+      <div class="cards-card__title" style="font-size: 30px;">Дама с собачкой</div>
+      <div class="cards-card__material">Акрил, бумага (50×80)</div>
+      <div class="cards-card__price">16 500 ₽</div>
+      <button class="cards-card__button">В корзину</button>
+    </div>
 
-        let num = 127
-        let str = "PRIVET"
-        let bool = true
-        let empty = null
-        len undefined
-        
-        let NotaNumber = NaN
-        
-    </script>
-    
+    <div class="cards-card">
+      <img src="3.png" alt="Картина 3" class="cards-card__image"/>
+      <div class="cards-card__author">Франсуа Дюпон</div>
+      <div class="cards-card__title" style="font-size: 30px;">Процедура</div>
+      <div class="cards-card__material">Цветная литография (50×80)</div>
+      <div class="cards-card__price">20 000 ₽</div>
+      <button class="cards-card__button">В корзину</button>
+    </div>
+
+    <div class="cards-card">
+      <img src="4.png" alt="Картина 4" class="cards-card__image"/>
+      <div class="cards-card__author">Луи Детош</div>
+      <div class="cards-card__title" style="font-size: 30px;">Роза</div>
+      <div class="cards-card__material">Бумага, акрил (50×80)</div>
+      <div class="cards-card__price">12 000 ₽</div>
+      <button class="cards-card__button">В корзину</button>
+    </div>
+
+    <div class="cards-card">
+      <img src="5.png" alt="Картина 5" class="cards-card__image"/>
+      <div class="cards-card__author">Франсуа Дюпон</div>
+      <div class="cards-card__title" style="font-size: 30px;">Птичья трапеза</div>
+      <div class="cards-card__material">Цветная литография (50×80)</div>
+      <div class="cards-card__price">22 500 ₽</div>
+      <button class="cards-card__button">В корзину</button>
+    </div>
+
+    <div class="cards-card">
+      <img src="62.png" alt="Картина 6" class="cards-card__image"/>
+      <div class="cards-card__author">Пьер Моранж</div>
+      <div class="cards-card__title" style="font-size: 30px;">Пейзаж с рыбой</div>
+      <div class="cards-card__material">Цветная литография (50×80)</div>
+      <div class="cards-card__price">20 500 ₽</div>
+      <button class="cards-card__button">В корзину</button>
+    </div>
+  </div>
 </body>
 </html>
