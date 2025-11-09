@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function greet() {
+  console.log("Привет, мир!")
+}
+greet()
+
+function sayHello(name) {
+  console.log("Привет, " + name + "!")
+}
+sayHello("Александр")
+sayHello("Игорь")
+
+function sum(a, b) {
+  return a + b
+}
+console.log(sum(5, 7))
+
+function isEven(n) {
+  return n % 2 == 0
+}
+console.log(isEven(4))
+console.log(isEven(7))
+
+function max(a, b) {
+  if (a > b) return a
+  if (b > a) return b
+  return "Числа равны"
+}
+console.log(max(10, 5))
+console.log(max(3, 3))
+
+function getInitials(a, b) {
+  return a[0] + "." + b[0] + "."
+}
+console.log(getInitials("Алиса", "Боброва"))
+
+function square(x) {
+  return x * x
+}
+function cube(x) {
+  return x * square(x)
+}
+console.log(cube(3))
+
+const sumArrow = (a, b) => a + b
+console.log(sumArrow(2, 3))
+
+function getFactorial(n) {
+  let r = 1
+  for (let i = 1; i <= n; i++) r *= i
+  return r
+}
+console.log(getFactorial(5))
+</script>
+</body>
+</html>
